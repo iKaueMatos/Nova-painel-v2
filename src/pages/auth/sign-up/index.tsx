@@ -61,11 +61,11 @@ export function SignUp() {
             onSubmit={handleSubmit(handleSignIn)}
           >
             <div className="space-y-2">
-              <Label htmlFor="nameCompany">Nome do estabelecimento</Label>
+              <Label htmlFor="company">Nome do estabelecimento</Label>
               <Input
-                id="nameCompany"
+                id="company"
                 type="text"
-                {...register("nameCompany")}
+                {...register("company")}
                 required
               />
             </div>

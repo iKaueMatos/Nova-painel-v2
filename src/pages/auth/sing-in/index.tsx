@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet-async";
 
 const signInForm = z.object({
   email: z.string().email(),
-  password: z.string(),
+  password: z.string().min(8).max(8),
 });
 
 type SignInForm = z.infer<typeof signInForm>;
@@ -61,7 +61,7 @@ export function SingIn() {
               <Input
                 id="password"
                 type="password"
-                placeholder="*****"t
+                placeholder="*****"
                 {...register("password")}
                 required
               />
