@@ -28,6 +28,7 @@ export function SignUp() {
   async function handleSignIn(data: SingUpForm) {
     const info = data.email ? console.log('data $s', data.email) : null;
     try {
+      console.log(info);
       await new Promise((resolve) => setTimeout(resolve, 2000));
       toast.success("Cadastro efetuado com sucesso!", {
         action: {

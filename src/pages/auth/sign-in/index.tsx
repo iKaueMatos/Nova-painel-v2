@@ -25,7 +25,8 @@ export function SingIn() {
   async function handleSignIn(data: SignInForm) {
     const info = data.email && data.password ? console.log('data $s', data.email) : null;
     try {
-      await new Promise((info) => setTimeout(info, 2000));
+      console.log(info);
+      await new Promise((resolve) => setTimeout(resolve, 2000));
       toast.success('login aprovado!', {})
     } catch (error) {
       toast.error("Senha invalida!");
