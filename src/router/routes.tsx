@@ -1,6 +1,6 @@
 import { AppLayout } from "@/pages/_layouts/app";
 import { AuthLayout } from "@/pages/_layouts/auth";
-import { SingIn } from "@/pages/auth/sing-in";
+import { SingIn } from "@/pages/auth/sign-in";
 import { Dashboard } from "@/pages/dashboard";
 import { Orders } from "@/pages/orders";
 import { Products } from "@/pages/product";
