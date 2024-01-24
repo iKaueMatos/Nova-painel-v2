@@ -3,7 +3,7 @@ import { RouterProvider } from "react-router-dom";
 import { Toaster } from "sonner";
 import { ThemeProvider } from "./components/theme/theme-provider";
 import "./global.css";
-import { router } from "./router/routes";
+import { routes } from "./router/routes";
 
 export function App() {
   return (
@@ -11,7 +11,7 @@ export function App() {
         <ThemeProvider storageKey="nova-software-theme" defaultTheme="dark">
           <Helmet titleTemplate="%s | Nova Software" />
           <Toaster richColors />
-          <RouterProvider router={router} />
+          <RouterProvider router={routes} />
         </ThemeProvider>
       </HelmetProvider>
   );
