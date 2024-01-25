@@ -1,13 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
 } from '@/components/ui/select';
 import { Search, X } from 'lucide-react';
+import { SelectState } from "../select-state";
 
 export function OrderTableFilters() {
   return (
@@ -29,6 +30,7 @@ export function OrderTableFilters() {
           <SelectItem value="delivered">Entregue</SelectItem>
         </SelectContent>
       </Select>
+      <SelectState />
       <Button type="submit" variant="outline" size="xs">
         <Search className="mr-2 h-4 w-4" />
         Filtrar resultados
