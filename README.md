@@ -16,7 +16,7 @@ Testes Unitários e de Integração: JUnit, Mockito, etc. <br>
 
 # Configuração e Uso
 Certifique-se de ter o Java e o Maven instalados.<br>
-Clone o repositório: git clone https://github.com/Nova-Software-Organization/nova-auth.git<br>
+Clone o repositório: git clone https://github.com/Nova-Software-Organization/nova-painel-v2.git<br>
 Importe o projeto em sua IDE de preferência.<br>
 Configure o banco de dados no arquivo application.properties. <br>
 
