@@ -25,6 +25,7 @@ export function Products() {
                     <TableHead className="w-[164px]">Preço de</TableHead>
                     <TableHead className="w-[132px]"></TableHead>
                     <TableHead className="w-[132px]"></TableHead>
+                    <TableHead className="w-[132px]"></TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>

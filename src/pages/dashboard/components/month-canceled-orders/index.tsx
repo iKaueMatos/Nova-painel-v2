@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { DollarSign } from "lucide-react";
 
-export function MonthCanceledOrders() {
+export function MonthCanceledOrdersAmountCard() {
   return (
     <Card>
       <CardHeader className="flex-row items-center space-y-0 justify-between pb-2">

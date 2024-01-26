@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 import { TableCell, TableRow } from "@/components/ui/table";
-import { ArrowRight, Search, X } from "lucide-react";
+import { ArrowRight, Pencil, Search, X } from "lucide-react";
 
 export function ProductTableRow() {
   return (
@@ -39,6 +39,12 @@ export function ProductTableRow() {
           Excluir produto
         </Button>
       </TableCell>
+      <TableCell>
+          <Button variant="ghost" size="xs">
+            <Pencil className="h-3 mr-2 w-3" />
+            Editar produto
+          </Button>
+        </TableCell>
     </TableRow>
   );
 }

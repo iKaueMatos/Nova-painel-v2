@@ -1,20 +1,27 @@
 import { Helmet } from "react-helmet-async";
-import { DayOrdersAmout } from "./components/day-orders-amout-card";
-import { MonthCanceledOrders } from "./components/month-canceled-orders";
+import { DayOrdersAmountCard } from "./components/day-orders-amout-card";
+import { PopularProductsChart } from "./components/grafics/population-chart";
+import { RevenueChart } from "./components/grafics/revelue-chart";
+import { MonthCanceledOrdersAmountCard } from "./components/month-canceled-orders";
 import { MonthRevenueCard } from "./components/month-revend-card";
-import { OrderMonthAmout } from "./components/order-month-amount";
+import { MonthOrdersAmountCard } from "./components/order-month-amount";
 
 export function Dashboard() {
   return (
     <>
       <Helmet title="Dashboard" />
       <div className="flex flex-col gap-4">
-        <h1 className="font-bold text-3xl tracking-tight">Dashboard</h1>
+        <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
         <div className="grid grid-cols-4 gap-4">
-            <MonthRevenueCard />
-            <OrderMonthAmout />
-            <DayOrdersAmout />
-            <MonthCanceledOrders />
+          <MonthRevenueCard />
+          <MonthOrdersAmountCard />
+          <DayOrdersAmountCard />
+          <MonthCanceledOrdersAmountCard />
+        </div>
+
+        <div className="grid grid-cols-9 gap-4">
+          <RevenueChart />
+          <PopularProductsChart />
         </div>
       </div>
     </>

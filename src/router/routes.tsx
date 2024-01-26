@@ -2,6 +2,7 @@ import { AppLayout } from "@/pages/_layouts/app";
 import { AuthLayout } from "@/pages/_layouts/auth";
 import { SingIn } from "@/pages/auth/sign-in";
 import { Dashboard } from "@/pages/dashboard";
+import { NotFould } from "@/pages/error/404";
 import { Orders } from "@/pages/orders";
 import { Products } from "@/pages/product";
 import { SeeMoreDetailsOrder } from "@/pages/see-more-details-order";
@@ -13,6 +14,7 @@ export const routes = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
+    errorElement: <NotFould />,
     children: [
       {
         path: "/",
