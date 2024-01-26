@@ -1,3 +1,6 @@
+import { DialogDescription } from "@radix-ui/react-dialog";
+import { Link } from "react-router-dom";
+
 import { Button } from "@/components/ui/button";
 import {
     DialogContent,
@@ -5,8 +8,6 @@ import {
     DialogTitle,
 } from "@/components/ui/dialog";
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
-import { DialogDescription } from "@radix-ui/react-dialog";
-import { Link } from "react-router-dom";
 
 export function OrderDetails() {
   return (

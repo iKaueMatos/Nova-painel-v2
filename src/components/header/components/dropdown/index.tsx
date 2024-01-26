@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
-import { Building, ChevronDown, LogOut, Settings, Store } from "lucide-react";
+import { Building, ChevronDown } from "lucide-react";
 
-export function AccountMenu() {
+export function DropdownGeneric() {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -18,20 +18,16 @@ export function AccountMenu() {
                 </DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem>
-                    <Building className="mr-2 w-4 h-4" />
-                    <span>{""} Perfil da loja</span>
+                    Categoria
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                    <Store className="mr-2 w-4 h-4" />
-                    <span>{""} Ir para loja</span>
+                    Estoque
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                    <Settings className="mr-2 w-4 h-4" />
-                    <span>{""} Configurações</span>
+                    
                 </DropdownMenuItem>
-                <DropdownMenuItem className="text-red-600">
-                    <LogOut className="mr-2 w-4 h-4" />
-                    <span className="font-bold">{""} Sair</span>
+                <DropdownMenuItem>
+
                 </DropdownMenuItem>
             </DropdownMenuContent>
         </DropdownMenu>

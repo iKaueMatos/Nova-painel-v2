@@ -1,5 +1,7 @@
 import { Home, ShoppingBag, ShoppingBasket } from "lucide-react";
 import { Link } from "react-router-dom";
+
+import { Profile } from "../avatar";
 import { AccountMenu } from "../theme/account-menu";
 import { ThemeToggle } from "../theme/theme-toggle";
 import { Separator } from "../ui/separator";
@@ -30,6 +32,7 @@ export function Header() {
         <div className="ml-auto flex items-center gap-2">
           <ThemeToggle />
           <AccountMenu />
+          <Profile />
         </div>
       </div>
     </div>
