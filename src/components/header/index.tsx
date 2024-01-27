@@ -8,6 +8,7 @@ import { Profile } from "./components/avatar";
 import { DropdownFinance } from "./components/dropdown/finance";
 import { DropdownOrders } from "./components/dropdown/orders";
 import { DropdownProduct } from "./components/dropdown/product";
+import { DropdownSupplies } from "./components/dropdown/supplies";
 import { NavLink } from "./components/nav-llink";
 
 export function Header() {
@@ -26,6 +27,7 @@ export function Header() {
             <DropdownProduct />
             <DropdownOrders />
             <DropdownFinance />
+            <DropdownSupplies />
           <NavLink to="/trash">
             <Trash className="h-4 w-4 text-black dark:text-white" />
             <span className="text-black dark:text-white">Lixeira</span>

@@ -31,13 +31,13 @@ export function AccountMenu() {
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
-          <Store className="mr-2 w-4 h-4 text-black" />
-          <span className="text-black">{""} Ir para loja</span>
+          <Store className="mr-2 w-4 h-4 text-black dark:text-white" />
+          <span className="text-black dark:text-white">{""} Ir para loja</span>
         </DropdownMenuItem>
         <DropdownMenuItem>
           <NavLink to="/settings">
-            <Settings className="mr-2 w-4 h-4 text-black" />
-            <span className="text-black">{""} Configurações</span>
+            <Settings className="mr-2 w-4 h-4 text-black dark:text-white" />
+            <span className="text-black dark:text-white">{""} Configurações</span>
           </NavLink>
         </DropdownMenuItem>
         <DropdownMenuItem className="text-red-600">
