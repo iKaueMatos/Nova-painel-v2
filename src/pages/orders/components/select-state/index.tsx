@@ -7,7 +7,7 @@ export function SelectState() {
         <SelectValue />
       </SelectTrigger>
       <SelectContent>
-        {}
+        estados
       </SelectContent>
     </Select>
   );
